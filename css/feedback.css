@@ -1,0 +1,24 @@
+.container .star-widget input {
+    display: none;
+}
+
+.star-widget label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: gold;
+}
+
+input:checked ~ label {
+    color: gold;
+}
+
+input:checked ~ form {
+    display: block;
+}
